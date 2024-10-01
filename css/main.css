@@ -110,7 +110,15 @@ footer{
         font-size: 2.5rem; /* Ajusta el tamaño del título */
         text-align: center;
     }
-
+    body{
+        height: 100vh;
+    }
+    header{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 9vh;
+    }
     .boton {
         width: 90%;
         height: auto; /* Deja que el botón se ajuste según el contenido */
@@ -131,12 +139,14 @@ footer{
     }
 
     #seccionFooter {
-        flex-direction: column;
-        height: auto; /* Ajusta el footer al contenido */
+        flex-direction: row; /* Mantén los elementos uno al lado del otro */
+        height: 22vh; /* Ajusta el footer al contenido */
+        justify-content: space-between; /* Mantén separación entre los elementos */
+        padding: 0 10px; /* Añade espacio entre los lados del footer */
     }
 
     .primeraSeccion, .terceraSeccion {
-        width: 100%; /* Ocupa el 100% del ancho en móviles */
+        width: 60%; /* Ocupa el 45% del ancho en móviles para cada sección */
         text-align: center; /* Centra el contenido */
     }
 }
