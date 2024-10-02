@@ -104,6 +104,9 @@ footer{
     text-align: right;
     height: 20%;
 }
+.mobileLogos{
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     main h1 {
@@ -118,10 +121,12 @@ footer{
         background-repeat: no-repeat;
         width: 100%;
         height: 9vh;
+        background-image: url(../imagenes/SESLogoGris.png);
+        padding-top: 15vh;
     }
     .boton {
         width: 90%;
-        height: auto; /* Deja que el botón se ajuste según el contenido */
+        height: 8vh; /* Deja que el botón se ajuste según el contenido */
         font-size: 1.5rem;
         padding: 10px; /* Agrega padding en móviles */
     }
@@ -135,18 +140,28 @@ footer{
     }
 
     .opciones {
-        height: auto; /* Deja que las opciones ocupen el espacio necesario en móviles */
+        height: 20vh; /* Deja que las opciones ocupen el espacio necesario en móviles */
     }
 
     #seccionFooter {
         flex-direction: row; /* Mantén los elementos uno al lado del otro */
         height: 22vh; /* Ajusta el footer al contenido */
         justify-content: space-between; /* Mantén separación entre los elementos */
-        padding: 0 10px; /* Añade espacio entre los lados del footer */
+        padding: 10px; /* Añade espacio entre los lados del footer */
     }
 
     .primeraSeccion, .terceraSeccion {
         width: 60%; /* Ocupa el 45% del ancho en móviles para cada sección */
         text-align: center; /* Centra el contenido */
+    }
+    .mobileLogos{
+        display: block;
+        width: 100%;
+        height: 20vh;
+        top:15vh;
+        background-image: url(../imagenes/mobileLogos.png);
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
